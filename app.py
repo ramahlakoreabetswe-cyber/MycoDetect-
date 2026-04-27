@@ -125,13 +125,17 @@ with tab3:
     st.info("""
 TB Risk Screening Tool
 Created for Tritech 2026
+
 Developer: Reabetswe Ramahlako
+
 Location: Limpopo
 
 Built with: Python + Tkinter
+
 Scoring based on WHO TB Guidelines
 
 Special Thanks:
+
 The Programmers Realm - Youtube Channel
 
 Disclaimer: This is an educational tool only.
