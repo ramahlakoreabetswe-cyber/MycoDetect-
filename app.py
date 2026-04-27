@@ -53,43 +53,59 @@ with tab2:
     st.header("What is TB?")
     st.markdown("""
     **WHAT IS TUBERCULOSIS (TB)?**
+    
 
     Tuberculosis (TB) is a serious contagious infection cause by Mycobacterium tuberculosis bacteria that primarily attacks the lungs (pulmonary TB), but can attack other parts of the body.
 
     **HOW DOES TB SPREAD?**
     
+    
     Tuberculosis is spread through the air from person to person when someone with active lung or throat TB coughs, sneezes, speaks or sings. These bacteria can remain suspended in the air for several hours, infecting others who breathe them in, particularly in enclosed, poorly ventilated or crowd spaces.
 
     **FACTORS AFFECTING SPREAD**
     
+    
     Close contact: TB is usually passed to people spent daily time with with, such as family members, friends, or co-workers. 
+    
     Duration: Prolonged exposure to an infected person increases the risk of infection.
+    
     Immune system: People with weak immune systems (e.g., HIV, malnutrition, diabetes) are at higher risk of developing active TB if exposed.
 
     **COMMON SYMPTOMS:**
     
+    
     -Coughing lasting 2 weeks or more
+    
     -Unexplained weight loss
+    
     -Night sweats and fever
+    
     -COUGHING UP BLOOD OR PHLEGM
+    
     -Chest pain and weakness
 
     **WHY IS IT SERIOUS IN SOUTH AFRICA?**
     
-    Tuberculosis (TB) is one of the most pressing public health challenges in South Africa. SA is on the top three lists of 30 high burden countries for TB,
+    
+    Tuberculosis (TB) is one of the most pressing public health challenges in South Africa. SA is on the top three lists of 30 high burden countries for TB and
     HIV-associated TB (TB/HIV) [South African Department of Health]. About 56,000 people die from TB each year in South Africa.
 
     **PREVENTING THE SPREAD**
     
+    
     Treatment: People with active TB usually stop being contagious 2 to 3 weeeks after starting proper treatment.
+    
     Ventilation: Using fans or opening windows to ensure fresh air moves around can reduce transmission risk.
+    
     Hygiene: Covering the mouth when coughing or sneezing and wearing a mask  can help reduce the release of bacteria.
 
     **THE GOOD NEWS:**
     
+    
     TB IS CURABLE!! With a standard 6-month course of four antimicrobial drugs. Treatment for active TB is highly effective when followed correctly, preventing further infection and gryg resistance. Drug-resistant TB requires longer, more complex, and specialised treatment regimens.
 
     **WHEN TO GET TESTED:**
+    
     
     If you have a cough for 2+ weeks OR any 2+ symptoms above, visit your nearest clinic for a FREE TB test.
 
@@ -97,8 +113,11 @@ with tab2:
     **Information from:**
     
     https://www.mayoclinic.org
+    
     https://www.cdc.gov > tb > signs-symptoms
+    
     https://www.health.gov.za
+    
     Please visit the National Department of Health, Mayo Clinic or Centers for Disease Control and Prevention websites for more information regarding Tuberculosis.""")
 
 with tab3:
