@@ -102,7 +102,7 @@ with tab2:
     **THE GOOD NEWS:**
     
     
-    TB IS CURABLE!! With a standard 6-month course of four antimicrobial drugs. Treatment for active TB is highly effective when followed correctly, preventing further infection and gryg resistance. Drug-resistant TB requires longer, more complex, and specialised treatment regimens.
+    TB IS CURABLE!! With a standard 6-month course of four antimicrobial drugs. Treatment for active TB is highly effective when followed correctly, preventing further infection and resistance. Drug-resistant TB requires longer, more complex, and specialised treatment regimens.
 
     **WHEN TO GET TESTED:**
     
