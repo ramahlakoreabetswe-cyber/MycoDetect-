@@ -46,7 +46,8 @@ with tab1:
                 st.warning(f"{name}, you have {score} points. Moderate risk. Although you are not at high risk, you should pay attention to any new symptoms that may develop or consider visitin a clinic for TB testing.")
             else:
                  st.warning(f"{name}, you have {score} points. Low risk. Stay aware :)")
-                 st.caption("Disclaimer: This is not a medical diagnosis. Please consult a healthcare professional for TB testing and advice")
+            
+            st.caption("Disclaimer: This is not a medical diagnosis. Please consult a healthcare professional for TB testing and advice")
 
 with tab2:
     st.header("What is TB?")
