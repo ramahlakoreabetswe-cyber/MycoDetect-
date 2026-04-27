@@ -65,7 +65,7 @@ with tab2:
     **FACTORS AFFECTING SPREAD**
     
     
-    Close contact: TB is usually passed to people spent daily time with with, such as family members, friends, or co-workers. 
+    Close contact: People with active TB are most likely to spread it to those they spend time with everyday, such as family members, friends, coworkers, or schoolmates 
     
     Duration: Prolonged exposure to an infected person increases the risk of infection.
     
