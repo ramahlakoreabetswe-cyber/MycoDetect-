@@ -1,0 +1,118 @@
+import streamlit as st
+
+# Page setup
+st.set_page_config(page_title="MycoDetect", layout="centered")
+
+
+# Title + Credits
+st.title("MycoDetect: TB Risk Screening")
+st.caption("Developed by: Reabetswe")
+         
+# Tabs = your menu bar
+tab1, tab2, tab3 = st.tabs(["Risk Screening", "What is TB?", "Credits"])
+         
+with tab1:
+    st.header("TB Risk Screening")
+    name = st.text_input("Enter your name:")
+         
+    st.subheader("Tick all symptoms that apply:")
+    col1, col2 = st.columns(2)
+    
+    # 25-point total system
+    with col1:
+                 coughing = 2 if st.checkbox("Coughing") else 0
+                 constant_cough_2weeks = 4 if st.checkbox("Constant cough for more than 2 weeks") else 0 
+                 fever = 2 if st.checkbox("Do you have a fever") else 0
+                 sweats = 2 if st.checkbox("Night sweats") else 0
+                 weight = 2 if st.checkbox("Experiencing unexplained weight loss") else 0
+    with col2:
+                 fatigue = 1 if st.checkbox("Tiredness or fatigue") else 0
+                 chest_pain = 2 if st.checkbox("Often experience chest pain") else 0
+                 blood_or_sputum = 4 if st.checkbox("Coughing up blood or sputum") else 0
+                 appetite = 2 if st.checkbox("Loss of appetite") else 0
+                 contact = 4 if st.checkbox("Have you had contact with someone with TB?") else 0
+        
+    if st.button("calculate My Risk", type="primary"):
+        if not name:
+                 st.error("Please enter your name first.")
+        else:
+            score = sum([coughing, constant_cough_2weeks, fever, sweats, weight, fatigue, chest_pain, blood_or_sputum, appetite, contact])
+            st.divider()
+            if score == 0:
+                 st.success(f"{name}, you reported no TB symptoms. Keep monitoring your health.")
+            elif score >= 20:
+                st.warning(f"{name}, you have {score} points. HIGH RISK. Go to a clinic immediately!!")
+            elif score >=10:
+                st.warning(f"{name}, you have {score} points. Moderate risk. Although you are not at high risk, you should pay attention to any new symptoms that may develop or consider visitin a clinic for TB testing.")
+            else:
+                 st.warning(f"{name}, you have {score} points. Low risk. Stay aware :)")
+                 
+
+with tab2:
+    st.header("What is TB?")
+    st.markdown("""
+    **WHAT IS TUBERCULOSIS (TB)?**
+
+    Tuberculosis (TB) is a serious contagious infection cause by Mycobacterium tuberculosis bacteria that primarily attacks the lungs (pulmonary TB), but can attack other parts of the body.
+
+    **HOW DOES TB SPREAD?**
+    Tuberculosis is spread through the air from person to person when someone with active lung or throat TB coughs, sneezes, speaks or sings. These bacteria can remain suspended in the air for several hours, infecting others who breathe them in, particularly in enclosed, poorly ventilated or crowd spaces.
+
+    **FACTORS AFFECTING SPREAD**
+    Close contact: TB is usually passed to people spent daily time with with, such as family members, friends, or co-workers. 
+    Duration: Prolonged exposure to an infected person increases the risk of infection.
+    Immune system: People with weak immune systems (e.g., HIV, malnutrition, diabetes) are at higher risk of developing active TB if exposed.
+
+    **COMMON SYMPTOMS:**
+    -Coughing lasting 2 weeks or more
+    -Unexplained weight loss
+    -Night sweats and fever
+    -COUGHING UP BLOOD OR PHLEGM
+    -Chest pain and weakness
+
+    **WHY IS IT SERIOUS IN SOUTH AFRICA?**
+    Tuberculosis (TB) is one of the most pressing public health challenges in South Africa. SA is on the top three lists of 30 high burden countries for TB,
+    HIV-associated TB (TB/HIV) [South African Department of Health]. About 56,000 people die from TB each year in South Africa.
+
+    **PREVENTING THE SPREAD**
+    Treatment: People with active TB usually stop being contagious 2 to 3 weeeks after starting proper treatment.
+    Ventilation: Using fans or opening windows to ensure fresh air moves around can reduce transmission risk.
+    Hygiene: Covering the mouth when coughing or sneezing and wearing a mask  can help reduce the release of bacteria.
+
+    **THE GOOD NEWS:**
+    TB IS CURABLE!! With a standard 6-month course of four antimicrobial drugs. Treatment for active TB is highly effective when followed correctly, preventing further infection and gryg resistance. Drug-resistant TB requires longer, more complex, and specialised treatment regimens.
+
+    **WHEN TO GET TESTED:**
+    If you have a cough for 2+ weeks OR any 2+ symptoms above, visit your nearest clinic for a FREE TB test.
+
+
+    **Information from:**
+    https://www.mayoclinic.org
+    https://www.cdc.gov > tb > signs-symptoms
+    https://www.health.gov.za
+    Please visit the National Department of Health, Mayo Clinic or Centers for Disease Control and Prevention websites for more information regarding Tuberculosis.""")
+
+with tab3:
+    st.header("Credts")
+    st.info("""
+TB Risk Screening Tool
+Created for Tritech 2026
+Developer: Reabetswe Ramahlako
+Location: Limpopo
+
+Built with: Python + Tkinter
+Scoring based on WHO TB Guidelines
+
+Special Thanks:
+The Programmers Realm - Youtube Channel
+
+Disclaimer: This is an educational tool only.
+Not a substitute for professional medical diagnosis.
+
+\u00A9 MycoDetect""")
+                                       
+# Exit button at bottom
+st.divider()
+if st.button("Exit MycoDetect", type="secondary"):
+    st.success("Thank you for using MycoDetect! You can now close this browser tab.")
+    st.stop()
