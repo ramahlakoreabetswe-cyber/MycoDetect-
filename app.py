@@ -24,13 +24,13 @@ with tab1:
                  constant_cough_2weeks = 4 if st.checkbox("Constant cough for 2 weeks or more") else 0 
                  fever = 2 if st.checkbox("Fever") else 0
                  sweats = 2 if st.checkbox("Night sweats") else 0
-                 weight = 2 if st.checkbox("Experiencing unexplained weight loss") else 0
+                 weight = 2 if st.checkbox("Unexplained weight loss") else 0
     with col2:
                  fatigue = 1 if st.checkbox("Tiredness or fatigue") else 0
                  chest_pain = 2 if st.checkbox("Often experience chest pain") else 0
                  blood_or_sputum = 4 if st.checkbox("Coughing up blood or sputum") else 0
                  appetite = 2 if st.checkbox("Loss of appetite") else 0
-                 contact = 4 if st.checkbox("Have you had contact with someone with TB?") else 0
+                 contact = 4 if st.checkbox("Had contact with someone infected with TB") else 0
         
     if st.button("calculate My Risk", type="primary"):
         if not name:
