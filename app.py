@@ -21,8 +21,8 @@ with tab1:
     # 25-point total system
     with col1:
                  coughing = 2 if st.checkbox("Coughing") else 0
-                 constant_cough_2weeks = 4 if st.checkbox("Constant cough for more than 2 weeks") else 0 
-                 fever = 2 if st.checkbox("Do you have a fever") else 0
+                 constant_cough_2weeks = 4 if st.checkbox("Constant cough for 2 weeks or more") else 0 
+                 fever = 2 if st.checkbox("Fever") else 0
                  sweats = 2 if st.checkbox("Night sweats") else 0
                  weight = 2 if st.checkbox("Experiencing unexplained weight loss") else 0
     with col2:
@@ -74,7 +74,7 @@ with tab2:
     **COMMON SYMPTOMS:**
     
     
-    -Coughing lasting 2 weeks or more
+    -Coughing lasting up to 2 weeks or more
     
     -Unexplained weight loss
     
