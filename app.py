@@ -30,7 +30,7 @@ with tab1:
                  chest_pain = 2 if st.checkbox("Often experience chest pain") else 0
                  blood_or_sputum = 4 if st.checkbox("Coughing up blood or sputum") else 0
                  appetite = 2 if st.checkbox("Loss of appetite") else 0
-                 contact = 4 if st.checkbox("Had contact with someone infected with TB") else 0
+                 contact = 4 if st.checkbox("Had recent contact with someone infected with TB") else 0
         
     if st.button("calculate My Risk", type="primary"):
         if not name:
